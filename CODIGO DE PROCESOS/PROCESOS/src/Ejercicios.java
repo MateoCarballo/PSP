@@ -7,7 +7,9 @@ public class Ejercicios {
     public static void main(String[] args){
         // ejercicio4();
         //ejercicio5();
-        ejercicio6();
+        //ejercicio6();
+        //ejercicio7();
+        ejercicio8();
     }
 
 
@@ -165,6 +167,35 @@ public class Ejercicios {
             System.out.println("Error durante la escritura del ping a Google en el ejercicio 6");;
         } finally {
             if (process != null) process.destroy();
+        }
+    }
+
+    //Ejercicio 7
+    //Crea un proceso con ProcessBuilder que muestre por pantalla
+    //los directorios o archivos de C:\\
+
+    private static void ejercicio7() {
+        ProcessBuilder processBuilder = new ProcessBuilder("cmd","/C","dir","C:\\");
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(processBuilder.start().getInputStream()));
+            do {
+                System.out.println(bufferedReader.readLine());
+            }while (bufferedReader.readLine() != null);
+        } catch (IOException e) {
+            System.out.println("Error en el ejercicio 7");
+        }
+    }
+
+    //Ejercicio 8
+    //Crea un proceso con ProcessBuilder que guarde en un archivo
+    //los directorios o archivos de C:\\
+    private static void ejercicio8(){
+        ProcessBuilder processBuilder = new ProcessBuilder("cmd","/C","dir","C:\\");
+        processBuilder.redirectOutput(new File("Fichero_resultado.txt"));
+        try {
+            Process p = processBuilder.start();
+        } catch (IOException e) {
+            System.out.println("Error al castear a proceso el proccesBuilder");
         }
 
 

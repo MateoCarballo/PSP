@@ -1,0 +1,13 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 8284-0389
+
+ Directorio de C:\
+
+07/05/2022  06:24    <DIR>          PerfLogs
+19/11/2024  19:25    <DIR>          Program Files
+21/10/2024  17:34    <DIR>          Program Files (x86)
+16/09/2024  16:43    <DIR>          Users
+25/11/2024  18:18            26.996 veyon.log
+21/11/2024  20:58    <DIR>          Windows
+               1 archivos         26.996 bytes
+               5 dirs  64.404.680.704 bytes libres
