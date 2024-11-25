@@ -20,20 +20,20 @@ Pasos:
      */
 
     public static void main(String[] args) {
-        //Sumar.sumarDosNumeros();
-        primerPaso();
+        Sumar.sumarDosNumeros();
+        //primerPaso();
     }
 
     private static void primerPaso() {
         //Dependiendo del IDE la ruta al .class varía
         Process process = null;
-        File ruta = new File(".\\out");
-        ProcessBuilder pb = new ProcessBuilder("java","\\production\\PROCESOS\\Ejercicio_Propuesto\\Sumar");
+        File ruta = new File(".\\out\\production\\PROCESOS");
+        ProcessBuilder pb = new ProcessBuilder("java","Ejercicio_Propuesto.Sumar");
         pb.directory(ruta);
         try {
             process = pb.start();
         } catch (IOException e) {
-            System.out.println("error al arrancar el proceso");
+            System.out.println("Error al arrancar el proceso");
         }
 
         try{
