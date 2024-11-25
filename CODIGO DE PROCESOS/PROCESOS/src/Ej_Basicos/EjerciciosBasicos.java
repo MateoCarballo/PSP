@@ -1,9 +1,11 @@
+package Ej_Basicos;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Ejercicios {
+public class EjerciciosBasicos {
     public static void main(String[] args){
         // ejercicio4();
         //ejercicio5();

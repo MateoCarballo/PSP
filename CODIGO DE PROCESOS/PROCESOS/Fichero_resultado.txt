@@ -10,4 +10,4 @@
 25/11/2024  18:18            26.996 veyon.log
 21/11/2024  20:58    <DIR>          Windows
                1 archivos         26.996 bytes
-               5 dirs  64.404.680.704 bytes libres
+               5 dirs  64.410.468.352 bytes libres
