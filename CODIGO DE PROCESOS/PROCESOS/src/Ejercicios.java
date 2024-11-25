@@ -154,14 +154,17 @@ public class Ejercicios {
     //Ejercicio 6
     //Crea un proceso que muestre por pantalla la salida de hacer un ping a google.com mediante Runtime
     private static void ejercicio6() {
+        Process process = null;
         try{
-            Process process= Runtime.getRuntime().exec("ping google.com");
+            process = Runtime.getRuntime().exec("ping google.com");
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            do {
+            do
                 System.out.println(br.readLine());
-            }while(process.isAlive());
+            while(process.isAlive());
         } catch (IOException e) {
             System.out.println("Error durante la escritura del ping a Google en el ejercicio 6");;
+        } finally {
+            if (process != null) process.destroy();
         }
 
 
