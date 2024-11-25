@@ -6,7 +6,8 @@ import java.io.InputStreamReader;
 public class Ejercicios {
     public static void main(String[] args){
         // ejercicio4();
-        ejercicio5();
+        //ejercicio5();
+        ejercicio6();
     }
 
 
@@ -136,6 +137,33 @@ public class Ejercicios {
         } catch (IOException e) {
             System.out.println("Excepcion al printear en la consola el ping a google");
         }
+        // Mostrar el codigo de salida
+
+        try {
+            int codigo = process.waitFor();
+            System.out.println(codigo);
+        } catch (InterruptedException e) {
+            System.out.println("Error al printear el codigo");
+        }
+
+        process.destroy();
+
+    }
+
+
+    //Ejercicio 6
+    //Crea un proceso que muestre por pantalla la salida de hacer un ping a google.com mediante Runtime
+    private static void ejercicio6() {
+        try{
+            Process process= Runtime.getRuntime().exec("ping google.com");
+            BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            do {
+                System.out.println(br.readLine());
+            }while(process.isAlive());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
 
     }
 
