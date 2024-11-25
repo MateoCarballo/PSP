@@ -161,7 +161,7 @@ public class Ejercicios {
                 System.out.println(br.readLine());
             }while(process.isAlive());
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error durante la escritura del ping a Google en el ejercicio 6");;
         }
 
 
