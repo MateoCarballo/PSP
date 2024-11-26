@@ -20,8 +20,8 @@ Pasos:
      */
 
     public static void main(String[] args) {
-        Sumar.sumarDosNumeros();
-        //primerPaso();
+        //Sumar.sumarDosNumeros();
+        primerPaso();
     }
 
     private static void primerPaso() {
