@@ -17,6 +17,12 @@ public class Principal {
             System.out.println(error);
         }
         int exitCode = process.waitFor();
-        System.out.println("Codigo de salida -> " + exitCode);
+        switch (exitCode){
+            case 0 -> System.out.println("Funcionamiento correcto");
+            case 1 -> System.out.println("No tiene argumentos");
+            case 2 -> System.out.println("El parametro no es un numero");
+            case 3 -> System.out.println("El parametro es negativo");
+            default -> System.out.println("Opcion fuera de rango 0-3");
+        }
     }
 }
