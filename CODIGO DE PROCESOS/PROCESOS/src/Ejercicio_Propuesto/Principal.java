@@ -19,45 +19,45 @@ Pasos:
 8) Crea un BufferedReader en donde leeremos línea a línea para mostrar los errores recibidos
      */
 
-    public static void main(String[] args) {
-        //Sumar.sumarDosNumeros();
+    public static void main(String[] args) throws IOException {
         primerPaso();
     }
 
-    private static void primerPaso() {
+    public static void primerPaso() throws IOException {
         //Dependiendo del IDE la ruta al .class varía
-        Process process = null;
+
         File ruta = new File(".\\out\\production\\PROCESOS");
         ProcessBuilder pb = new ProcessBuilder("java","Ejercicio_Propuesto.Sumar");
         pb.directory(ruta);
-        try {
-            process = pb.start();
-        } catch (IOException e) {
-            System.out.println("Error al arrancar el proceso");
-        }
+        Process p = pb.start();
+
 
         try{
-            assert process != null : "El proceso es 'null'";
-            OutputStream os = process.getOutputStream();
+            OutputStream os = p.getOutputStream();
             os.write("15\n".getBytes());
             os.write("3\n".getBytes());
             os.flush();
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
             String linea;
-            while ((linea = br.readLine()) != null) System.out.println(linea);
+            while ((linea = br.readLine()) != null){
+                System.out.println(linea);
+            }
+            // Leer los posibles errores (si los hay)
+            BufferedReader errorReader = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+            String errorLine;
+            while ((errorLine = errorReader.readLine()) != null) {
+                System.err.println(errorLine);  // Mostrar los errores
+            }
 
+            // Esperar a que el proceso termine y obtener su código de salida
+            int exitCode = p.waitFor();
+            System.out.println("Código de salida: " + exitCode);
 
         }catch (IOException e){
             System.out.println("Error del tipo IOE");
+        } catch (InterruptedException e) {
+            System.out.println("Error en el wait For");
         }
-
-
-        /*
-        //Acortada
-        ProcessBuilder pbZ = new ProcessBuilder("java","Sumar");
-        pbZ.directory(new File("out/production/PROCESOS/Ejercicio_Propuesto"));
-         */
-
     }
 }
