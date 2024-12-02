@@ -37,6 +37,7 @@ Pasos:
         }
 
         try{
+            assert process != null : "El proceso es 'null'";
             OutputStream os = process.getOutputStream();
             os.write("15\n".getBytes());
             os.write("3\n".getBytes());
