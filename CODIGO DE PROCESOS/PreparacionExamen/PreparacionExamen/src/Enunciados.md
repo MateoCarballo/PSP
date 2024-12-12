@@ -93,7 +93,7 @@ Con la clase `ProcessBuilder`:
 8. Usa otro `BufferedReader` para leer los errores recibidos línea por línea.
 
 ---
-
+---
 ### Ejercicio 10
 Crea una clase llamada `Devol` que devuelva valores con `System.exit()` según estas condiciones:
 
@@ -101,7 +101,7 @@ Crea una clase llamada `Devol` que devuelva valores con `System.exit()` según e
 - Si el argumento es una cadena, devuelve **2**.
 - Si el argumento es un número entero menor que 0, devuelve **3**.
 - En cualquier otro caso, devuelve **0**.
-
+---
 #### Clase `Principal`
 
 1. Crea una clase llamada `Principal` que ejecute el programa anterior (`Devol`).
