@@ -1,0 +1,22 @@
+los cálculos tiene que ser realizado por un hilo independiente. Las clases que implementen cada
+hilo tienen que llamarse Factorial y Fibonacci. Implementar los procesos de 2 maneras diferentes:
+a) Heredando de la clase Thread
+b) Implementando la interface Runnable
+Recuerda que factorial(0)=1 y para todo n>0, factorial(n)=n*factorial(n-1).
+Recuerda que fib(0)=0, fib(1)=1 y para todo n>1, fib(n)=fib(n-1)+fib(n-2).
+7. Hacer un programa que calcule los factoriales del 5 al 14 modificando la clase Factorial del ejercicio
+anterior, para que se visualicen los mensajes:
+empieza el proceso … cálculo del factorial de: XX
+acabó el proceso ….. el factorial de: XX es XXXX
+En el método main declarar un vector o array de 10 hilos y lanzarlos a ejecución.
+8. Implementa un programa que reciba a través de sus argumentos una lista de ficheros de texto y
+cuente el número de caracteres que hay en cada fichero.
+Modifica el programa para que se cree un hilo por cada fichero a contar. Muestra lo que se tarda
+en contar cada fichero en la forma secuencial, y a continuación empleando hilos. Para calcular el
+tiempo que tarda en ejecutarse un proceso podemos usar el método de la siguiente manera:
+System.currentTimeMillis()
+long t_comienzo, t_fin;
+t_comienzo = System.currentTimeMillis();
+Proceso();
+t_fin = System.currentTimeMillis();
+long tiempoTotal = t_fin – t_comienzo;

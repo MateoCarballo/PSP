@@ -1,0 +1,1 @@
+los cálculos tiene que ser realizado por un hilo independiente. Las clases que implementen cada
