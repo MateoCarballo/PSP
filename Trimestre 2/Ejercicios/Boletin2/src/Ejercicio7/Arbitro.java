@@ -13,18 +13,22 @@ public class Arbitro {
         this.finalizado = finalizado;
     }
 
-    public void comprobarJugada(int idJugador, int jugada){
-        System.out.println("Jugador " + idJugador + " dice: " + jugada);
-        if (this.numeroAdivinar == jugada){
-            this.ganador = idJugador;
-            this.finalizado = true;
-        }else{
-            if (idJugador == 2){
-                this.turno = 0;
+    public synchronized void comprobarJugada(int idJugador, int jugada){
+
+        if (this.turno == idJugador){
+            System.out.println("Jugador " + idJugador + " dice: " + jugada);
+            if (this.numeroAdivinar == jugada){
+                this.ganador = idJugador;
+                this.finalizado = true;
+                System.out.println("Jugador " + this.ganador + " gana, adivinó el numero!!!!");
             }else{
-                this.turno++;
+                if (idJugador == 2){
+                    this.turno = 0;
+                }else{
+                    this.turno++;
+                }
+                System.out.println("Le toca a " + this.turno);
             }
-            System.out.println("Le toca a " + this.turno);
         }
 
     }

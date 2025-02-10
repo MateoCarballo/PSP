@@ -12,6 +12,11 @@ public class Jugador extends Thread{
     }
 
     public void run(){
-        this.arbitro.comprobarJugada(this.idJugador, this.jugada);
+        while (!this.arbitro.isFinalizado()){
+            if (arbitro.getTurno() == this.idJugador){
+                this.jugada = (int) (Math.random() * 10) + 1;
+                this.arbitro.comprobarJugada(this.idJugador, this.jugada);
+            }
+        }
     }
 }

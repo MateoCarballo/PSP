@@ -12,23 +12,9 @@ public class Ejercicio7 {
 
         System.out.println( "NUMERO A ADIVINAR " + arbitro.getNumeroAdivinar());
 
+            j0.start();
+            j1.start();
+            j2.start();
 
-        j0.start();
-        j1.start();
-        j2.start();
-
-        try{
-            do{
-                switch (arbitro.getTurno()){
-                    case 0 -> j0.join();
-                    case 1 -> j1.join();
-                    case 2 -> j2.join();
-                }
-            }while(!arbitro.isFinalizado());
-
-            System.out.println("Jugador " + arbitro.getGanador() + " gana, adivinó el numero!!!!");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 }
