@@ -1,0 +1,13 @@
+Crea un un proceso padre que cree un array de 1000 posiciones. Los valores del array serán en orden del 1 al 1000.
+
+Crea ahora un clase que extienda de Thread. Esta clase tendrá un constructor en el cual se le pasará un array de numeros, un inicio y un final.
+Este proceso Hilo debe calcular la media de dicho array desde su inicio hasta su final.
+
+Por último, desde el proceso padre, inicia los siguientes hilos para que hagan sus operaciones correspondientes.
+	hilo 1: calcular media del 0-250
+	hilo 2: caluclar media del 250-500
+	hilo 3: calcular media del 500-750
+	hilo 4: calcular media del 750-1000
+
+
+Por último, recoge todas las medias desde el proceso padre y sumalas.

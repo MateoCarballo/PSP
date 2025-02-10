@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecc4a290-108a-4e0c-96d7-03b088757691" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejercicios_Iniciales.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio6/Ejercicio6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio6/HiloFactorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio6/HiloFibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio7/Ejercicio7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio7/HiloFactorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio8/ContarFicheros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio8/Enunciado.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio8/Ficheros/File1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio8/Ficheros/File2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio8/Ficheros/File3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_Tema_2/Ejercicio8/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_01_HolaMundo/Enunciado.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_01_HolaMundo/holamundo_Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_01_HolaMundo/holamundo_hilo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_02_HilosIncrementadores/Enunciado.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_02_HilosIncrementadores/hiloA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_02_HilosIncrementadores/hiloB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_02_HilosIncrementadores/hilosincrementadores_main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_03_CalcularMediaThreads/CalculaMediaThreads.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_03_CalcularMediaThreads/calcularMedias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios_Iniciales/Ej_03_CalcularMediaThreads/hiloMedia.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2srU0CfjWInk381ftH5oB0ClY9c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecc4a290-108a-4e0c-96d7-03b088757691" name="Changes" comment="" />
+      <created>1739212962901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739212962901</updated>
+    </task>
+    <servers />
+  </component>
+</project>
