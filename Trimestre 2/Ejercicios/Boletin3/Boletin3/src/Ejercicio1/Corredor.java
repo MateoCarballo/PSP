@@ -10,16 +10,20 @@ public class Corredor extends Thread{
     }
 
     public void run(){
-        if (carrera.getTurnoCorredor() == numeroThread){
+        do{
+            carrera.obtenerTurno(numeroThread);
+        }while(carrera.getTurno() != numeroThread);
+
+        if (carrera.getTurno() == numeroThread){
             System.out.println("Soy el thread " + numeroThread + ",corriendo . . .");
             try {
                 sleep(1500);
-                carrera.turnoCorredor(numeroThread);
             } catch (InterruptedException e) {
                 System.out.println("Error al parar 1500 ms");
             }
             if (numeroThread < 4){
                 System.out.println("Termine paso el relevo al corredor " + (numeroThread+1));
+                carrera.avanzaTurno();
             }else {
                 System.out.println("Terminé!");
             }

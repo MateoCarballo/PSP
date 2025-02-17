@@ -5,21 +5,21 @@ public class Relevos {
 
     public static void main(String[] args) {
 
-        Carrera carrera = new Carrera();
-        Corredor c1 = new Corredor(1,carrera);
-        Corredor c2 = new Corredor(2,carrera);
-        Corredor c3 = new Corredor(3,carrera);
-        Corredor c4 = new Corredor(4,carrera);
-        carrera.setTurnoCorredor(1);
+        Carrera carrera = new Carrera(1);
+        Corredor corredores[] = new Corredor[4];
 
+        for (int i = 0; i < 4; i++) {
+            corredores[i] = new Corredor(i + 1, carrera);
+            corredores[i].start();
+        }
 
-        c1.start();
-        c2.start();
-        c3.start();
-        c4.start();
-
-
-
+        try {
+            for (int i = 0; i < 4; i++) {
+                corredores[i].join();
+            }
+        } catch (InterruptedException ex) {
+            System.out.println("Hilo principal interrumpido.");
+        }
 
     }
 
