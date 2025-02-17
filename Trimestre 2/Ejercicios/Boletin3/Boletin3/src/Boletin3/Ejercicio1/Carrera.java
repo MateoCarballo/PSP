@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Boletin3.Ejercicio1;
 
 public class Carrera {
 
