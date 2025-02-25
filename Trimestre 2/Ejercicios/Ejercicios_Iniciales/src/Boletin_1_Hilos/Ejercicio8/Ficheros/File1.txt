@@ -1,4 +1,0 @@
-. Hacer un programa que calcule el factorial y un número de la sucesión de Fibonacci. Cada uno de
-
-System.out.println(“El proceso ha tardado: “ +
-tiempototal + “ miliseg”);
