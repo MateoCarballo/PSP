@@ -1,4 +1,8 @@
 package BoletinExtraRepaso.Ejercicio01;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Se necesita implementar un sistema de procesamiento de datos en una base de
 datos que se comparte entre varios hilos. El acceso a esta base de datos debe estar
@@ -14,7 +18,20 @@ los hilos.
 
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        ClaseCompartida claseCompartida = new ClaseCompartida();
+        ArrayList<AccesoDB> hilos = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            hilos.add(new AccesoDB(claseCompartida));
+            hilos.get(i).start();
+        }
 
+        for (AccesoDB hilo:hilos){
+            hilo.join();
+        }
     }
 }
+
+/*
+Que pasa si no hago un join al final del programa
+ */
