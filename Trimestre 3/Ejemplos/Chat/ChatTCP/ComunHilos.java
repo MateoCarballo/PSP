@@ -18,7 +18,7 @@ public class ComunHilos {
 
 	public ComunHilos() { super(); }
 
-     public int getMAXIMO() { return MAXIMO;	}
+    public int getMAXIMO() { return MAXIMO;	}
 	public void setMAXIMO(int maximo) { MAXIMO = maximo;}
 
 
