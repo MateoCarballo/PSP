@@ -1,3 +1,5 @@
+package Boletin1;
+
 import java.net.*;
 import java.util.Scanner;
 /**

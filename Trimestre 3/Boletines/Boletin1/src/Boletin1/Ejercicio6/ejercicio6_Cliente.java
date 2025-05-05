@@ -1,4 +1,4 @@
-package Ejercicio6;
+package Boletin1.Ejercicio6;
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
