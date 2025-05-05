@@ -1,0 +1,3 @@
+Crea un programa cliente que introduzca por teclado un número entero y
+ se lo envíe al servidor.
+ El servidor le devolverá el cuadrado del número.
